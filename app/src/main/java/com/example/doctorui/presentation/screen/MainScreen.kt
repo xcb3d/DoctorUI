@@ -30,6 +30,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
     var navigationSelectionItem by remember {
         mutableIntStateOf(0)
     }
+    val temp by remember {
+        mutableIntStateOf(1)
+    }
     val bottomNavigationItems = listOf(
         BottomNavItemScreen.Home,
         BottomNavItemScreen.Schedule,
