@@ -16,7 +16,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -80,7 +80,7 @@ fun ScheduleDoctorCard(modifier: Modifier = Modifier) {
                     )
                 }
             }
-            Divider(
+            HorizontalDivider(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 16.dp)
@@ -95,7 +95,12 @@ fun ScheduleDoctorCard(modifier: Modifier = Modifier) {
                     .padding(top = 20.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF63B4FF).copy(alpha = 0.1f)),
                 onClick = { /*TODO*/ }) {
-                Text(text = "Details", color = BluePrimary, fontWeight = FontWeight.Medium, fontFamily = poppinsFontFamily)
+                Text(
+                    text = "Details",
+                    color = BluePrimary,
+                    fontWeight = FontWeight.Medium,
+                    fontFamily = poppinsFontFamily
+                )
             }
         }
     }
